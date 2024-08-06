@@ -1,0 +1,43 @@
+{
+    "main.py": {
+        "exposes": [
+            "app"
+        ]
+    },
+    "requirements.txt": {
+        "description": "Lists project dependencies: FastAPI and Uvicorn.",
+        "exposes": [
+            "fastapi",
+            "uvicorn"
+        ]
+    },
+    "models/__init__.py": {
+        "description": "An empty __init__.py file to mark the models directory as a Python package."
+    },
+    "routes/__init__.py": {
+        "description": "An empty __init__.py file to mark the routes directory as a Python package."
+    },
+    "routes/hello.py": {
+        "description": "Defines a single endpoint /hello that returns a static 'hello world' message.",
+        "dependencies": {
+            "main.py": [
+                "app"
+            ]
+        },
+        "exposes": [
+            "hello_router"
+        ]
+    },
+    "__init__.py": {
+        "description": "An empty __init__.py file to mark the project root as a Python package."
+    },
+    ".gitignore": {
+        "description": ".gitignore with Python cache files and IDE config."
+    },
+    "run.sh": {
+        "description": "Bash run script, installs project dependencies, and starts the FastAPI server with Uvicorn."
+    },
+    "README.md": {
+        "description": "README with basic documentation and 'how to run' guide."
+    }
+}
