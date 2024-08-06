@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+ipython_config.py
+.ipynb_checkpoints/
+.vscode/
+.env
+.venv/
+*.iml
+.idea/
